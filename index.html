@@ -309,22 +309,24 @@
       line-height: 1.6;
       margin-bottom: 30px;
     }
-
-   .profile-image {
-  flex: 1;
-  text-align: center;
+.profile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0; 
 }
 
 .profile-image img {
-  max-width: 100%;
-  border-radius: 50%;
-  box-shadow: 0 0 20px rgba(138, 43, 226, 0.5); /* Roxo brilhante ao redor */
-    .quote {
-      font-style: italic;
-      font-size: 1.2rem;
-      color: var(--accent-color);
-      margin-top: 20px;
-    }
+  max-width: 300px;
+  height: auto; 
+  border-radius: 50%; 
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.5); 
+  transition: transform 0.3s ease;
+}
+
+.profile-image img:hover {
+  transform: scale(1.05); 
+}
 
     .skills-list {
       display: flex;
